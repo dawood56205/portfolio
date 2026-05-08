@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Hire Me | Dawood Qureshi</title>
 
-  <!-- Tailwind CSS -->
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
   <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
 
   <script>
     tailwind.config = {
@@ -21,24 +26,33 @@
           fontFamily: {
             outfit: ['Outfit', 'sans-serif']
           },
+
           colors: {
             primary: '#7c3aed',
             secondary: '#06b6d4',
             dark: '#020617'
           },
+
           animation: {
             float: 'float 6s ease-in-out infinite',
             glow: 'glow 2s ease-in-out infinite alternate',
             pulseSlow: 'pulse 4s infinite'
           },
+
           keyframes: {
             float: {
               '0%,100%': { transform: 'translateY(0px)' },
               '50%': { transform: 'translateY(-18px)' }
             },
+
             glow: {
-              '0%': { boxShadow: '0 0 20px rgba(124,58,237,0.3)' },
-              '100%': { boxShadow: '0 0 50px rgba(6,182,212,0.7)' }
+              '0%': {
+                boxShadow: '0 0 20px rgba(124,58,237,0.3)'
+              },
+
+              '100%': {
+                boxShadow: '0 0 50px rgba(6,182,212,0.7)'
+              }
             }
           }
         }
@@ -48,62 +62,107 @@
 
   <style>
 
-    body{
-      background:#020617;
-      overflow-x:hidden;
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #020617;
+      overflow-x: hidden;
     }
 
-    .glass{
-      background: rgba(255,255,255,0.05);
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(18px);
-      border:1px solid rgba(255,255,255,0.08);
+      border: 1px solid rgba(255, 255, 255, 0.08);
     }
 
-    .gradient-text{
-      background: linear-gradient(to right,#7c3aed,#06b6d4);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
+    .gradient-text {
+      background: linear-gradient(to right, #7c3aed, #06b6d4);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
-    .grid-bg{
+    .grid-bg {
       background-image:
-      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+        linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
 
       background-size: 40px 40px;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-10px) scale(1.02);
+    }
+
+    /* Mobile Responsive */
+    @media(max-width:768px) {
+
+      .hero-title {
+        font-size: 3rem;
+        line-height: 1.1;
+      }
+
+      .contact-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .main-card {
+        padding: 2rem 1.5rem;
+      }
+
+      .cta-btn {
+        width: 100%;
+        justify-content: center;
+      }
+
+    }
+
+    @media(max-width:480px) {
+
+      .hero-title {
+        font-size: 2.4rem;
+      }
+
     }
 
   </style>
 
 </head>
 
-<body class="font-outfit text-white min-h-screen relative grid-bg">
+<body class="text-white min-h-screen relative grid-bg">
 
-  <!-- Background Effects -->
-  <div class="fixed top-0 left-0 w-[500px] h-[500px] bg-purple-600/30 blur-[140px] rounded-full -z-10 animate-pulseSlow"></div>
+  <!-- Background Blurs -->
+  <div
+    class="fixed top-0 left-0 w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-purple-600/30 blur-[120px] rounded-full -z-10 animate-pulseSlow">
+  </div>
 
-  <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[140px] rounded-full -z-10 animate-pulseSlow"></div>
+  <div
+    class="fixed bottom-0 right-0 w-[400px] md:w-[500px] h-[400px] md:h-[500px] bg-cyan-500/20 blur-[120px] rounded-full -z-10 animate-pulseSlow">
+  </div>
 
   <!-- Navbar -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
+  <nav
+    class="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
 
-    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+    <div
+      class="max-w-7xl mx-auto px-5 md:px-8 py-5 flex items-center justify-between">
 
       <h1 class="text-3xl font-black tracking-tight">
         DQ<span class="text-primary">.</span>
       </h1>
 
-      <div class="hidden md:flex items-center gap-8">
+      <div class="hidden md:flex items-center gap-8 text-sm font-medium">
 
-        <a href="index.html" class="hover:text-primary transition duration-300">
+        <a href="index.html"
+          class="hover:text-primary transition duration-300">
           Home
         </a>
 
-        <a href="index.html" class="hover:text-primary transition duration-300">
+        <a href="index.html"
+          class="hover:text-primary transition duration-300">
           Portfolio
         </a>
 
-        <a href="#" class="hover:text-primary transition duration-300">
+        <a href="#"
+          class="hover:text-primary transition duration-300">
           Contact
         </a>
 
@@ -114,106 +173,133 @@
   </nav>
 
   <!-- Main Section -->
-  <section class="min-h-screen flex items-center justify-center px-6 py-20">
+  <section
+    class="min-h-screen flex items-center justify-center px-4 sm:px-6 py-16 md:py-24">
 
     <div class="max-w-5xl w-full">
 
       <!-- Main Card -->
-      <div class="glass rounded-[40px] p-8 md:p-16 shadow-2xl relative overflow-hidden animate-float">
+      <div
+        class="main-card glass rounded-[30px] md:rounded-[40px] p-8 md:p-16 shadow-2xl relative overflow-hidden animate-float">
 
-        <!-- Decorative Gradient -->
-        <div class="absolute top-0 right-0 w-72 h-72 bg-primary/20 blur-[120px] rounded-full"></div>
+        <!-- Gradient Blur -->
+        <div
+          class="absolute top-0 right-0 w-60 md:w-72 h-60 md:h-72 bg-primary/20 blur-[120px] rounded-full">
+        </div>
 
-        <!-- Heading -->
-        <div class="text-center relative z-10">
+        <!-- Content -->
+        <div class="relative z-10">
 
-          <span class="inline-block px-5 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold border border-primary/20">
-            Available For Work
-          </span>
+          <!-- Heading -->
+          <div class="text-center">
 
-          <h1 class="text-5xl md:text-7xl font-black mt-8 leading-tight">
+            <span
+              class="inline-block px-5 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold border border-primary/20">
 
-            Hire
-            <span class="gradient-text">
-              Me
+              Available For Work
+
             </span>
 
-          </h1>
+            <h1
+              class="hero-title text-5xl md:text-7xl font-black mt-8 leading-tight">
 
-          <p class="text-slate-400 mt-8 text-lg leading-relaxed max-w-2xl mx-auto">
-            I'm a Django Full Stack Developer passionate about building scalable web applications with Django, React, Tailwind CSS and PostgreSQL.
-          </p>
+              Hire
+              <span class="gradient-text">
+                Me
+              </span>
 
-        </div>
+            </h1>
 
-        <!-- Contact Cards -->
-        <div class="grid md:grid-cols-2 gap-8 mt-16 relative z-10">
+            <p
+              class="text-slate-400 mt-8 text-base md:text-lg leading-relaxed max-w-2xl mx-auto">
 
-          <!-- Phone Card -->
-          <div class="glass rounded-3xl p-10 text-center hover:scale-105 hover:border-primary/30 transition-all duration-500">
+              I'm a Django Full Stack Developer passionate about building
+              scalable, responsive and high-performance web applications using
+              Django, React, Tailwind CSS and PostgreSQL.
 
-            <div class="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
+            </p>
 
-              <i class="fas fa-phone text-4xl text-primary"></i>
+          </div>
+
+          <!-- Contact Cards -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mt-14">
+
+            <!-- Phone Card -->
+            <div
+              class="contact-card glass rounded-3xl p-8 md:p-10 text-center transition-all duration-500 hover:border-primary/30 card-hover">
+
+              <div
+                class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
+
+                <i class="fas fa-phone text-3xl md:text-4xl text-primary"></i>
+
+              </div>
+
+              <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                Call Me
+              </h2>
+
+              <p class="text-slate-400 mb-6 text-sm md:text-base">
+                Available for internships, freelance projects and
+                collaborations.
+              </p>
+
+              <a href="tel:+923004433490"
+                class="text-lg md:text-2xl font-semibold hover:text-primary transition-all duration-300">
+
+                +92 300 4433490
+
+              </a>
 
             </div>
 
-            <h2 class="text-3xl font-bold mb-4">
-              Call Me
-            </h2>
+            <!-- Email Card -->
+            <div
+              class="contact-card glass rounded-3xl p-8 md:p-10 text-center transition-all duration-500 hover:border-cyan-400/30 card-hover">
 
-            <p class="text-slate-400 mb-6">
-              Available for internships, freelance projects and collaborations.
-            </p>
+              <div
+                class="w-20 h-20 md:w-24 md:h-24 rounded-full bg-cyan-500/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
 
-            <a href="tel:+923004433490"
-            class="text-2xl font-semibold hover:text-primary transition-all duration-300">
+                <i
+                  class="fas fa-envelope text-3xl md:text-4xl text-cyan-400"></i>
 
-              +92 300 4433490
+              </div>
+
+              <h2 class="text-2xl md:text-3xl font-bold mb-4">
+                Email Me
+              </h2>
+
+              <p class="text-slate-400 mb-6 text-sm md:text-base">
+                Click below to directly open your mail compose window.
+              </p>
+
+              <a
+                href="mailto:Daudqureshi4@gmail.com?subject=Hiring Inquiry&body=Hello Dawood,"
+                class="text-base md:text-xl font-semibold hover:text-cyan-400 transition-all duration-300 break-all">
+
+                Daudqureshi4@gmail.com
+
+              </a>
+
+            </div>
+
+          </div>
+
+          <!-- CTA -->
+          <div class="text-center mt-14 md:mt-16">
+
+            <a
+              href="mailto:Daudqureshi4@gmail.com?subject=Project Discussion&body=Hello Dawood,"
+              class="cta-btn inline-flex items-center gap-4 px-8 md:px-10 py-4 md:py-5 rounded-2xl bg-gradient-to-r from-primary to-secondary font-bold text-base md:text-lg hover:scale-105 transition-all duration-500 animate-glow shadow-2xl">
+
+              <i class="fas fa-paper-plane"></i>
+
+              Let's Work Together
 
             </a>
 
           </div>
-
-          <!-- Email Card -->
-          <div class="glass rounded-3xl p-10 text-center hover:scale-105 hover:border-cyan-400/30 transition-all duration-500">
-
-            <div class="w-24 h-24 rounded-full bg-cyan-500/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
-
-              <i class="fas fa-envelope text-4xl text-cyan-400"></i>
-
-            </div>
-
-            <h2 class="text-3xl font-bold mb-4">
-              Email Me
-            </h2>
-
-            <p class="text-slate-400 mb-6">
-              Click below to directly open your mail compose window.
-            </p>
-
-            <a href="mailto:Daudqureshi4@gmail.com?subject=Hiring Inquiry&body=Hello Dawood,"
-            class="text-xl font-semibold hover:text-cyan-400 transition-all duration-300 break-all">
-
-              Daudqureshi4@gmail.com
-
-            </a>
-
-          </div>
-
-        </div>
-
-        <!-- CTA Button -->
-        <div class="text-center mt-16 relative z-10">
-
-          <a href="mailto:Daudqureshi4@gmail.com?subject=Project Discussion&body=Hello Dawood,"
-          class="inline-flex items-center gap-4 px-10 py-5 rounded-2xl bg-gradient-to-r from-primary to-secondary font-bold text-lg hover:scale-110 transition-all duration-500 animate-glow shadow-2xl">
-
-            <i class="fas fa-paper-plane"></i>
-
-            Let's Work Together
-
-          </a>
 
         </div>
 
@@ -224,4 +310,5 @@
   </section>
 
 </body>
+
 </html>
