@@ -1,0 +1,119 @@
+:root {
+    --primary: #6366f1;
+    --bg-dark: #020617;
+    --card-bg: rgba(30, 41, 59, 0.5);
+    --text-white: #f8fafc;
+    --text-muted: #94a3b8;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+}
+
+/* Background Animation Blob */
+.blob-bg {
+    position: fixed;
+    top: -10%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+    filter: blur(80px);
+    z-index: -1;
+}
+
+/* Glassmorphism Nav */
+.glass-nav {
+    position: fixed;
+    width: 100%;
+    padding: 25px 5%;
+    backdrop-filter: blur(12px);
+    z-index: 1000;
+}
+
+.nav-content { display: flex; justify-content: space-between; align-items: center; }
+.logo { font-size: 1.8rem; font-weight: 800; }
+.logo span { color: var(--primary); }
+
+.cta-pill {
+    background: var(--primary);
+    padding: 10px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero-split {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    padding: 100px 8%;
+    gap: 50px;
+}
+
+.hero-main { flex: 1.2; }
+.hero-main h1 { font-size: 4.5rem; line-height: 1.1; margin: 20px 0; }
+.text-gradient {
+    background: linear-gradient(135deg, #818cf8, #c084fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.badge {
+    background: rgba(99, 102, 241, 0.1);
+    color: var(--primary);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.hero-visual { flex: 0.8; position: relative; }
+.image-reveal-container {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 24px;
+    overflow: hidden;
+    transform: rotate(3deg);
+    transition: 0.5s;
+}
+.image-reveal-container:hover { transform: rotate(0deg) scale(1.02); }
+.reveal-img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Project Showcase */
+.projects { padding: 100px 8%; }
+.project-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 120px;
+    align-items: center;
+}
+.project-item.reverse { direction: rtl; text-align: left; }
+.project-item.reverse .p-text { direction: ltr; }
+
+.p-image {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
+}
+.p-image img { width: 100%; transition: 0.5s; }
+.p-image:hover img { transform: scale(1.05); }
+
+.p-metrics { display: flex; gap: 20px; margin: 20px 0; color: var(--primary); font-weight: 600; }
+.p-tags span {
+    background: var(--card-bg);
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-size: 0.8rem;
+    margin-right: 10px;
+}

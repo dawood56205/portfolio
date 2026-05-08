@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hire Me | Dawood Qureshi</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif']
+          },
+          colors: {
+            primary: '#7c3aed',
+            secondary: '#06b6d4',
+            dark: '#020617'
+          },
+          animation: {
+            float: 'float 6s ease-in-out infinite',
+            glow: 'glow 2s ease-in-out infinite alternate',
+            pulseSlow: 'pulse 4s infinite'
+          },
+          keyframes: {
+            float: {
+              '0%,100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-18px)' }
+            },
+            glow: {
+              '0%': { boxShadow: '0 0 20px rgba(124,58,237,0.3)' },
+              '100%': { boxShadow: '0 0 50px rgba(6,182,212,0.7)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+
+    body{
+      background:#020617;
+      overflow-x:hidden;
+    }
+
+    .glass{
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(18px);
+      border:1px solid rgba(255,255,255,0.08);
+    }
+
+    .gradient-text{
+      background: linear-gradient(to right,#7c3aed,#06b6d4);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+    }
+
+    .grid-bg{
+      background-image:
+      linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+
+      background-size: 40px 40px;
+    }
+
+  </style>
+
+</head>
+
+<body class="font-outfit text-white min-h-screen relative grid-bg">
+
+  <!-- Background Effects -->
+  <div class="fixed top-0 left-0 w-[500px] h-[500px] bg-purple-600/30 blur-[140px] rounded-full -z-10 animate-pulseSlow"></div>
+
+  <div class="fixed bottom-0 right-0 w-[500px] h-[500px] bg-cyan-500/20 blur-[140px] rounded-full -z-10 animate-pulseSlow"></div>
+
+  <!-- Navbar -->
+  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-black/20 border-b border-white/10">
+
+    <div class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+      <h1 class="text-3xl font-black tracking-tight">
+        DQ<span class="text-primary">.</span>
+      </h1>
+
+      <div class="hidden md:flex items-center gap-8">
+
+        <a href="index.html" class="hover:text-primary transition duration-300">
+          Home
+        </a>
+
+        <a href="index.html" class="hover:text-primary transition duration-300">
+          Portfolio
+        </a>
+
+        <a href="#" class="hover:text-primary transition duration-300">
+          Contact
+        </a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- Main Section -->
+  <section class="min-h-screen flex items-center justify-center px-6 py-20">
+
+    <div class="max-w-5xl w-full">
+
+      <!-- Main Card -->
+      <div class="glass rounded-[40px] p-8 md:p-16 shadow-2xl relative overflow-hidden animate-float">
+
+        <!-- Decorative Gradient -->
+        <div class="absolute top-0 right-0 w-72 h-72 bg-primary/20 blur-[120px] rounded-full"></div>
+
+        <!-- Heading -->
+        <div class="text-center relative z-10">
+
+          <span class="inline-block px-5 py-2 rounded-full bg-primary/20 text-primary text-sm font-semibold border border-primary/20">
+            Available For Work
+          </span>
+
+          <h1 class="text-5xl md:text-7xl font-black mt-8 leading-tight">
+
+            Hire
+            <span class="gradient-text">
+              Me
+            </span>
+
+          </h1>
+
+          <p class="text-slate-400 mt-8 text-lg leading-relaxed max-w-2xl mx-auto">
+            I'm a Django Full Stack Developer passionate about building scalable web applications with Django, React, Tailwind CSS and PostgreSQL.
+          </p>
+
+        </div>
+
+        <!-- Contact Cards -->
+        <div class="grid md:grid-cols-2 gap-8 mt-16 relative z-10">
+
+          <!-- Phone Card -->
+          <div class="glass rounded-3xl p-10 text-center hover:scale-105 hover:border-primary/30 transition-all duration-500">
+
+            <div class="w-24 h-24 rounded-full bg-primary/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
+
+              <i class="fas fa-phone text-4xl text-primary"></i>
+
+            </div>
+
+            <h2 class="text-3xl font-bold mb-4">
+              Call Me
+            </h2>
+
+            <p class="text-slate-400 mb-6">
+              Available for internships, freelance projects and collaborations.
+            </p>
+
+            <a href="tel:+923004433490"
+            class="text-2xl font-semibold hover:text-primary transition-all duration-300">
+
+              +92 300 4433490
+
+            </a>
+
+          </div>
+
+          <!-- Email Card -->
+          <div class="glass rounded-3xl p-10 text-center hover:scale-105 hover:border-cyan-400/30 transition-all duration-500">
+
+            <div class="w-24 h-24 rounded-full bg-cyan-500/20 flex items-center justify-center mx-auto mb-8 animate-pulse">
+
+              <i class="fas fa-envelope text-4xl text-cyan-400"></i>
+
+            </div>
+
+            <h2 class="text-3xl font-bold mb-4">
+              Email Me
+            </h2>
+
+            <p class="text-slate-400 mb-6">
+              Click below to directly open your mail compose window.
+            </p>
+
+            <a href="mailto:Daudqureshi4@gmail.com?subject=Hiring Inquiry&body=Hello Dawood,"
+            class="text-xl font-semibold hover:text-cyan-400 transition-all duration-300 break-all">
+
+              Daudqureshi4@gmail.com
+
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-16 relative z-10">
+
+          <a href="mailto:Daudqureshi4@gmail.com?subject=Project Discussion&body=Hello Dawood,"
+          class="inline-flex items-center gap-4 px-10 py-5 rounded-2xl bg-gradient-to-r from-primary to-secondary font-bold text-lg hover:scale-110 transition-all duration-500 animate-glow shadow-2xl">
+
+            <i class="fas fa-paper-plane"></i>
+
+            Let's Work Together
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</body>
+</html>
