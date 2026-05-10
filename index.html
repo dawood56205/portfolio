@@ -105,6 +105,7 @@
       DQ<span class="text-primary">.</span>
     </h1>
 
+    <!-- Desktop Menu -->
     <div class="hidden md:flex items-center gap-10 text-sm font-medium">
 
       <a href="#home" class="hover:text-primary duration-300">Home</a>
@@ -119,6 +120,20 @@
 
     </div>
 
+    <!-- Mobile Menu Button -->
+    <button id="menu-btn" class="md:hidden text-2xl text-white focus:outline-none z-50 transition-transform duration-300">
+      <i class="fas fa-bars"></i>
+    </button>
+
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div id="mobile-menu" class="fixed inset-0 bg-dark/98 z-40 flex flex-col items-center justify-center gap-8 text-2xl font-bold transition-all duration-500 translate-x-full">
+    <a href="#home" class="mobile-link hover:text-primary transition-colors">Home</a>
+    <a href="#about" class="mobile-link hover:text-primary transition-colors">About</a>
+    <a href="#skills" class="mobile-link hover:text-primary transition-colors">Skills</a>
+    <a href="#projects" class="mobile-link hover:text-primary transition-colors">Projects</a>
+    <a href="hireme.html" class="mobile-link px-8 py-4 rounded-full bg-gradient-to-r from-primary to-secondary">Hire Me</a>
   </div>
 </nav>
 
@@ -137,7 +152,7 @@
         </span>
       </div>
 
-      <h1 class="text-6xl lg:text-8xl font-black leading-tight">
+      <h1 class="text-4xl sm:text-6xl lg:text-8xl font-black leading-tight text-center lg:text-left">
 
         Building
         <span class="gradient-text">
@@ -149,27 +164,27 @@
 
       </h1>
 
-      <p class="text-slate-400 text-lg mt-8 leading-relaxed max-w-xl">
+      <p class="text-slate-400 text-base sm:text-lg mt-8 leading-relaxed max-w-xl mx-auto lg:mx-0 text-center lg:text-left">
         Passionate Django developer creating scalable, secure and modern web applications with Django, DRF, React, Tailwind CSS and PostgreSQL.
       </p>
 
       <!-- BUTTONS -->
-      <div class="flex flex-wrap gap-5 mt-10">
+      <div class="flex flex-wrap justify-center lg:justify-start gap-4 sm:gap-5 mt-10">
 
         <a href="#projects"
-        class="px-8 py-4 rounded-2xl bg-gradient-to-r from-primary to-secondary font-semibold hover:scale-105 duration-300 shadow-2xl">
+        class="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl bg-gradient-to-r from-primary to-secondary font-semibold hover:scale-105 duration-300 shadow-2xl text-sm sm:text-base text-center w-full sm:w-auto">
           View Projects
         </a>
 
         <a href="#contact"
-        class="px-8 py-4 rounded-2xl border border-white/10 glass hover:border-primary duration-300">
+        class="px-6 sm:px-8 py-3 sm:py-4 rounded-2xl border border-white/10 glass hover:border-primary duration-300 text-sm sm:text-base text-center w-full sm:w-auto">
           Contact Me
         </a>
 
       </div>
 
       <!-- SOCIALS -->
-      <div class="flex items-center gap-6 mt-10 text-2xl">
+      <div class="flex items-center justify-center lg:justify-start gap-6 mt-10 text-2xl">
 
         <a href="https://github.com/dawood56205" class="hover:text-primary hover:-translate-y-2 duration-300">
           <i class="fab fa-github"></i>
@@ -194,7 +209,7 @@
 
       <div class="absolute w-[500px] h-[500px] rounded-full bg-gradient-to-r from-primary to-secondary blur-[120px] opacity-30 animate-pulse"></div>
 
-      <div class="relative w-[380px] h-[500px] rounded-[40px] overflow-hidden border border-white/10 glass animate-float">
+      <div class="relative w-[300px] sm:w-[380px] h-[400px] sm:h-[500px] rounded-[40px] overflow-hidden border border-white/10 glass animate-float">
 
         <img
           src="WhatsApp Image 2026-05-08 at 3.15.52 PM.jpeg"
@@ -215,8 +230,8 @@
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="text-center mb-20" data-aos="fade-up">
-      <h2 class="text-5xl font-black">
+    <div class="text-center mb-12 sm:mb-20" data-aos="fade-up">
+      <h2 class="text-4xl sm:text-5xl font-black">
         About <span class="gradient-text">Me</span>
       </h2>
     </div>
@@ -238,16 +253,16 @@
           I specialize in developing powerful backend systems using Django and creating visually modern interfaces using Tailwind CSS and React JS.
         </p>
 
-        <div class="grid grid-cols-2 gap-6 mt-10">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 mt-10">
 
-          <div class="glass rounded-3xl p-6 card-hover">
-            <h4 class="text-5xl font-black text-primary">15+</h4>
-            <p class="text-slate-400 mt-2">Projects Built</p>
+          <div class="glass rounded-3xl p-6 sm:p-8 card-hover text-center sm:text-left">
+            <h4 class="text-4xl sm:text-5xl font-black text-primary">15+</h4>
+            <p class="text-slate-400 mt-2 text-sm sm:text-base">Projects Built</p>
           </div>
 
-          <div class="glass rounded-3xl p-6 card-hover">
-            <h4 class="text-5xl font-black text-cyan-400">3+</h4>
-            <p class="text-slate-400 mt-2">Years Learning</p>
+          <div class="glass rounded-3xl p-6 sm:p-8 card-hover text-center sm:text-left">
+            <h4 class="text-4xl sm:text-5xl font-black text-cyan-400">3+</h4>
+            <p class="text-slate-400 mt-2 text-sm sm:text-base">Years Learning</p>
           </div>
 
         </div>
@@ -265,15 +280,15 @@
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="text-center mb-20" data-aos="fade-up">
+    <div class="text-center mb-12 sm:mb-20" data-aos="fade-up">
 
-      <h2 class="text-5xl font-black">
+      <h2 class="text-4xl sm:text-5xl font-black">
         Tech <span class="gradient-text">Stack</span>
       </h2>
 
     </div>
 
-    <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
 
       <!-- CARD -->
       <div class="glass rounded-3xl p-8 text-center card-hover"
@@ -323,15 +338,15 @@
 
   <div class="max-w-7xl mx-auto px-6">
 
-    <div class="text-center mb-20" data-aos="fade-up">
+    <div class="text-center mb-12 sm:mb-20" data-aos="fade-up">
 
-      <h2 class="text-5xl font-black">
+      <h2 class="text-4xl sm:text-5xl font-black">
         Featured <span class="gradient-text">Projects</span>
       </h2>
 
     </div>
 
-    <div class="grid lg:grid-cols-2 gap-10">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-10">
 
       <!-- PROJECT -->
       <div class="glass rounded-[40px] overflow-hidden card-hover"
@@ -411,6 +426,45 @@
 
       </div>
 
+      <!-- PROJECT -->
+      <div class="glass rounded-[40px] overflow-hidden card-hover"
+      data-aos="fade-up">
+
+        <div class="overflow-hidden">
+          <img src="aiagents.png"
+          class="hover:scale-110 duration-700"/>
+        </div>
+
+        <div class="p-8">
+
+          <h3 class="text-3xl font-bold mb-4">
+            AI Agents
+          </h3>
+
+          <p class="text-slate-400 leading-relaxed">
+            Modern car customization platform developed using Django, Three.js and Tailwind CSS.
+          </p>
+
+          <div class="flex flex-wrap gap-3 mt-6">
+
+            <span class="px-4 py-2 rounded-full bg-primary/20 text-primary text-sm">
+              Django
+            </span>
+
+            <span class="px-4 py-2 rounded-full bg-green-500/20 text-green-400 text-sm">
+              AI
+            </span>
+
+            <span class="px-4 py-2 rounded-full bg-pink-500/20 text-pink-400 text-sm">
+              Tailwind
+            </span>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </div>
 
   </div>
@@ -424,7 +478,7 @@
 
     <div data-aos="zoom-in">
 
-      <h2 class="text-6xl font-black leading-tight">
+      <h2 class="text-4xl sm:text-6xl font-black leading-tight">
         Let's Build Something
         <span class="gradient-text">
           Amazing
@@ -468,6 +522,28 @@
   AOS.init({
     duration: 1200,
     once: true
+  });
+
+  // Mobile Menu Logic
+  const menuBtn = document.getElementById('menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileLinks = document.querySelectorAll('.mobile-link');
+  const menuIcon = menuBtn.querySelector('i');
+
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('translate-x-full');
+    menuIcon.classList.toggle('fa-bars');
+    menuIcon.classList.toggle('fa-times');
+    document.body.classList.toggle('overflow-hidden');
+  });
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.add('translate-x-full');
+      menuIcon.classList.add('fa-bars');
+      menuIcon.classList.remove('fa-times');
+      document.body.classList.remove('overflow-hidden');
+    });
   });
 
   // Navbar Blur Effect
